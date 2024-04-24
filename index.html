@@ -7,31 +7,36 @@
     <link rel="icon" title="image/x-icon" href="/images/vecteezy_computer-retro-tech_10420574.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ccad68c46d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Reenie+Beanie&family=Rubik+Bubbles&family=Seaweed+Script&display=swap"
+        rel="stylesheet">
     <title>Welcome Back... Again!</title>
 </head>
 <body loading-style="eager">
-    <div class="angry-grid">
-        <div id="item-0">
+    <div class="container">
+        <header>
             <h1 class="header-space">Welcome To My Site!<br>...Again!</h1>
-        </div>
-        <div id="item-1">
-
-        </div>
-        <div id="item-2">
+        </header>
+        <nav>
+            <details>
+                <summary>Some Things I've Done</summary>
+                <p>Some Content</p>
+                <p>Some Other Content</p>
+            </details>
+        </nav>
+        <main>
             <p>This re-redo of my first site <sub>&lpar;yeah, there was a second one we don't talk about like Bruno&rpar;</sub>
                 That I made for my bootcamp to get my certification in web development. Woo! The crowd goes wild!
                 So since then I've been trying to learn various things and expand upon my knowledge and skills.
                 Which is why I'll be flexing what talent I do have and use this site as a demonstration of how much I have grown!
             </p>
-        </div>
-        <div id="item-3">
-            <details>
-                <summary>Some Things I've Done</summary>
-                <p>Content Some Content</p>
-                <p>Content Some Other Content</p>
-            </details>
-        </div>
-        <div id="item-4">
+        </main>
+        <aside>
+            
+        </aside>
+        <footer>
             <div class="col-1">
                 <p class="footer-text"><i class="fa-solid fa-terminal"></i>Site by K. Surratt</p>
                 <p class="footer-text"><i class="fa-solid fa-terminal"></i>Updated 04/2024</p>
@@ -43,18 +48,19 @@
             </div>
             <div class="col-3">
                 <p class="footer-text">Contact Me:</p>
-                <form action="mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;%64%65%65%6A%75%68%37%31%39%40%67%6D%61%69%6C%2E%63%6F%6D" method="post" enctype="text/plain">
+                <form method="post" enctype="text/plain">
                     <fieldset>
-                        <legend>Your Email Address:</legend>
-                            <input type="email" id="email" name="email" aria-autocomplete="list"> 
-                        <legend>Your Name:</legend>
-                            <input type="text" id="name" name="name" aria-autocomplete="list">
-                        <legend>Your Message:</legend>
-                            <textarea id="message" name="message" rows="3" cols="30" spellcheck="true" aria-autocomplete="none"></textarea>
+                        <legend id="who">Who. Are. You!:</legend>
+                            <input type="text" id="name" name="name" aria-autocomplete="list" placeholder="&laquo;Your Name Here&raquo;" required>
+                        <legend>How Do I Get Back to You?:</legend>
+                            <input type="email" id="email" name="email" aria-autocomplete="list" placeholder="&laquo;This Is Your Email&raquo;" required>
+                        <legend>What Would You Like Me to Know:</legend>
+                            <textarea id="message" name="message" rows="3" cols="30" spellcheck="true" autocomplete="false" placeholder="&laquo;Tell me something like you want to hire me, or want to see more of what I can do.&raquo;" required></textarea>
                     </fieldset>
+                    <button type="submit" class="btn">Send It <i class="fa-regular fa-comment"></i></button>
                 </form>
             </div>
-        </div>
+        </footer>
     </div>
 </body>
 </html>
